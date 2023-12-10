@@ -1,0 +1,17 @@
+---
+kubernetes:
+  children:
+    master:
+      hosts:
+        k3s-master-1:
+          ansible_user: infra
+          ansible_host: 192.168.89.31
+          github_username: onidemon37
+          k3s_become: true
+    worker:
+      hosts:
+        k3s-worker-1:
+          ansible_user: infra
+          ansible_host: 192.168.89.33
+          github_username: onidemon37
+          k3s_become: true
