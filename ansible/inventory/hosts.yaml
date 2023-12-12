@@ -6,12 +6,9 @@ kubernetes:
         k3s-master-1:
           ansible_user: infra
           ansible_host: 192.168.89.31
-          github_username: onidemon37
-          k3s_become: true
-    worker:
-      hosts:
-        k3s-worker-1:
+        k3s-master-2:
+          ansible_user: infra
+          ansible_host: 192.168.89.32
+        k3s-master-3:
           ansible_user: infra
           ansible_host: 192.168.89.33
-          github_username: onidemon37
-          k3s_become: true
